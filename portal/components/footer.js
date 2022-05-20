@@ -13,26 +13,32 @@ const Footer = () => {
                         </div>
                         <div className="footer-top-body mt-3">
                             <table className="table">
-                                <tr>
-                                    <td colSpan={2} className="nama-prodi">
-                                        PRODI D3 TEKNIK INFORMATIKA
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td className=".bot-table akreditasi">A</td>
-                                    <td className=".bot-table tenggat">terakreditasi tahun 2018 berlaku hingga 09-07-2023</td>
-                                </tr>
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td colSpan={2} className="nama-prodi">
+                                            PRODI D3 TEKNIK INFORMATIKA
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className=".bot-table akreditasi">A</td>
+                                        <td className=".bot-table tenggat">terakreditasi tahun 2018 berlaku hingga 09-07-2023</td>
+                                    </tr>
+                                </tbody> 
                             </table>
                             <table className="table">
-                                <tr>
-                                    <td colSpan={2} className="nama-prodi">
-                                        PRODI D4 TEKNIK INFORMATIKA
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td className=".bot-table akreditasi">A</td>
-                                    <td className=".bot-table tenggat">terakreditasi tahun 2018 berlaku hingga 21-10-2026</td>
-                                </tr>
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td colSpan={2} className="nama-prodi">
+                                            PRODI D4 TEKNIK INFORMATIKA
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className=".bot-table akreditasi">A</td>
+                                        <td className=".bot-table tenggat">terakreditasi tahun 2018 berlaku hingga 21-10-2026</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>

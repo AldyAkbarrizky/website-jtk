@@ -25,7 +25,7 @@ export async function fetchAPI(path, options = {}) {
   };
 
   const requestUrl = `${getStrapiURL(
-    `/api${path}`
+    `/api${path}?populate=*`
   )}`;
 
   // Trigger API call
