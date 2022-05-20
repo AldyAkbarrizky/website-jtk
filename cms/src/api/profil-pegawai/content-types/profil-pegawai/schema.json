@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profil_pegawais",
+  "info": {
+    "singularName": "profil-pegawai",
+    "pluralName": "profil-pegawais",
+    "displayName": "Profil Pegawai"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profile_picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Nama": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    }
+  }
+}

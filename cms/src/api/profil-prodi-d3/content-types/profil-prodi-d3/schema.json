@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "profil_prodi_d3s",
+  "info": {
+    "singularName": "profil-prodi-d3",
+    "pluralName": "profil-prodi-d3s",
+    "displayName": "Profil Prodi D3"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul_konten": {
+      "type": "string"
+    },
+    "banner_konten": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "body_konten": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "profil_jurusans",
+  "info": {
+    "singularName": "profil-jurusan",
+    "pluralName": "profil-jurusans",
+    "displayName": "Profil Jurusan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul_content": {
+      "type": "string"
+    },
+    "banner_konten": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "body_konten": {
+      "type": "richtext"
+    }
+  }
+}

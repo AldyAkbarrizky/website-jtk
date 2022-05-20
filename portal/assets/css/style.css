@@ -1,0 +1,83 @@
+a {
+    text-decoration: none;
+}
+
+#header {
+    background-color: white;
+    padding: 15px 100px 15px 100px;
+    color: #102D59;
+}
+
+#header-logo {
+    margin: auto;
+}
+
+#header a {
+    color: #102D59 !important;
+    text-decoration: none;
+}
+
+#website-name {
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    border-left: 2px solid #102D59;
+}
+
+.navbar-nav > li{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#footer {
+    color: white;
+}
+
+#footer-top {
+    background-color: #102D59;
+    padding: 15px 100px 15px 100px;
+}
+
+#footer .table {
+    margin-top: 10px;
+    font-size: 12px;
+    color: white;
+    border: 1px solid;
+    text-align: center;
+}
+
+#footer .table td {
+    border: 1px solid white;
+    padding: 15px 0 15px 0;
+}
+
+#footer .table .nama-prodi {
+    padding: 5px 0 5px 0;
+}
+
+#footer .table .tenggat {
+    width: 75%;
+    padding: 0 15px 0 15px;
+}
+
+#footer .table .akreditasi {
+    width: 25%;
+    font-size: 36px;
+}
+
+#footer .link-a {
+    text-transform: uppercase;
+    color: #FE7D15;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#footer-bot {
+    background-color: #0A244D;
+    padding: 10px 100px 10px 100px;
+}
+
+.footer-top-header {
+    font-weight: 600;
+}

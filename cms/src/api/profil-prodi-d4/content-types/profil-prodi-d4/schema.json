@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "profil_prodi_d4s",
+  "info": {
+    "singularName": "profil-prodi-d4",
+    "pluralName": "profil-prodi-d4s",
+    "displayName": "Profil Prodi D4"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul_konten": {
+      "type": "string"
+    },
+    "banner_konten": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "body_konten": {
+      "type": "richtext"
+    }
+  }
+}
