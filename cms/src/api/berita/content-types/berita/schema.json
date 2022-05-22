@@ -4,7 +4,8 @@
   "info": {
     "singularName": "berita",
     "pluralName": "beritas",
-    "displayName": "Berita"
+    "displayName": "Artikel",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,16 +16,25 @@
       "type": "string"
     },
     "banner_konten": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "body_konten": {
+      "type": "richtext"
+    },
+    "kategori": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kategori.kategori"
+    },
+    "body_excerpt": {
       "type": "richtext"
     }
   }

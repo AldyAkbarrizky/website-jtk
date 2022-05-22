@@ -6,6 +6,7 @@ import Header from '../components/header';
 import { fetchAPI } from "../lib/api";
 import { getStrapiMedia } from '../lib/media';
 import reactMarkdown from 'react-markdown';
+import ReactMarkdown from 'react-markdown';
 
 const ProfilJurusan = ({profil}) => {
   console.log(profil)
@@ -23,16 +24,14 @@ const ProfilJurusan = ({profil}) => {
                         height={1080}
                         layout='intrinsic'
                     />
-                    <h2 className='mt-3'>Profil, Visi, dan Misi</h2>
-                    <p>
-
-                    </p>
+                    <ReactMarkdown className='mt-3' children={profil.attributes.body_konten} />
                 </div>
                 <div className='col-4'>
-                
+                    {/* Untuk side bar */}
                 </div>
             </div>
         </div>
+        <Footer />
     </div>
   )
 }

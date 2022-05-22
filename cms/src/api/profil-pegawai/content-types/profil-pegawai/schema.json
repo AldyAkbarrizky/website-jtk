@@ -4,7 +4,8 @@
   "info": {
     "singularName": "profil-pegawai",
     "pluralName": "profil-pegawais",
-    "displayName": "Profil Pegawai"
+    "displayName": "Profil Teknisi",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,14 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "profile_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Nama": {
       "type": "string"

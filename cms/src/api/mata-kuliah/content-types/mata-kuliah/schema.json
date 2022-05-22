@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mata_kuliahs",
+  "info": {
+    "singularName": "mata-kuliah",
+    "pluralName": "mata-kuliahs",
+    "displayName": "Mata Kuliah"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_matkul": {
+      "type": "string"
+    }
+  }
+}

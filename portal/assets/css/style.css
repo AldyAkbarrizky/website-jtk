@@ -4,6 +4,7 @@ a {
 
 .main-body {
     padding: 15px 100px 15px 100px !important;
+    background-color: #F3F3F3;
 }
 
 .main-body h1, .main-body h2 {
