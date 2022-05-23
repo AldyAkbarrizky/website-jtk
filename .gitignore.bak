@@ -3,8 +3,6 @@ node_modules
 /dist
 cms/node_modules
 portal/node_modules
-cms/package-lock.json
-portal/package-lock.json
 
 
 # local env files
