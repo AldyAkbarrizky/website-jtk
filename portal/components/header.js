@@ -36,7 +36,7 @@ const Header = () => {
                                         </a>
                                         <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                             <li><Link href="/profil-jurusan"><a className="dropdown-item">Profil Jurusan</a></Link></li>
-                                            <li><Link href="/"><a className="dropdown-item">Profil Prodi D3</a></Link></li>
+                                            <li><Link href="/profil-d3"><a className="dropdown-item">Profil Prodi D3</a></Link></li>
                                             <li><Link href="/"><a className="dropdown-item">Profil Prodi D4</a></Link></li>
                                             <li><Link href="/"><a className="dropdown-item">Profil Pegawai Teknisi</a></Link></li>
                                             <li><Link href="/"><a className="dropdown-item">Profil Dosen</a></Link></li>
