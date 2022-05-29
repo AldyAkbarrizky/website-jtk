@@ -18,17 +18,20 @@ const Artikel = ({artikel}) => {
                     <h1>Berita Seputar JTK Polban</h1>
                     {artikel.map((data, i) => {
                         return (
-                            <div class="card mt-4 mb-4">
+                            <div key={data.attributes.id} className="card mt-4 mb-4">
                                 <Image
                                     src={getStrapiMedia(data.attributes.banner_konten)}
                                     width={1920}
                                     height={1080}
                                     layout='intrinsic'
+                                    alt="Banner Artikel"
                                 />
-                                <div class="card-body p-5">
+                                <div className="card-body p-5">
                                     <h2>{data.attributes.judul_konten}</h2>
-                                    <ReactMarkdown children={data.attributes.body_excerpt}/>
-                                    <button type="button" class="btn btn-primary">Baca Selengkapnya</button>
+                                    <ReactMarkdown>
+                                        {data.attributes.body_excerpt}
+                                    </ReactMarkdown>
+                                    <button type="button" className="btn btn-primary">Baca Selengkapnya</button>
                                 </div>
 
                             </div>
@@ -47,12 +50,8 @@ const Artikel = ({artikel}) => {
 
 export async function getStaticProps() {
     const artikel = await fetchAPI("/beritas", {
-        populate: {
-          favicon: "*",
-          defaultSeo: {
-            populate: "*",
-          },
-        },
+        populate: "*",
+        sort: ['createdAt:desc'],
     });
 
     console.log(artikel);

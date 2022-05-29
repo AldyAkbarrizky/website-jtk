@@ -23,8 +23,11 @@ const ProfilJurusan = ({profil}) => {
                         width={1920}
                         height={1080}
                         layout='intrinsic'
+                        alt="Banner profil jurusan"
                     />
-                    <ReactMarkdown className='mt-3' children={profil.attributes.body_konten} />
+                    <ReactMarkdown className='mt-3'>
+                        {profil.attributes.body_konten}
+                    </ReactMarkdown>
                 </div>
                 <div className='col-4'>
                     {/* Untuk side bar */}
@@ -38,12 +41,7 @@ const ProfilJurusan = ({profil}) => {
 
 export async function getStaticProps() {
     const profilJurusan = await fetchAPI("/profil-jurusan", {
-        populate: {
-          favicon: "*",
-          defaultSeo: {
-            populate: "*",
-          },
-        },
+        populate: "*"
     });
 
     console.log(profilJurusan);

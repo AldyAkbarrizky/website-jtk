@@ -1,3 +1,4 @@
+import qs from "qs";
 /**
  * Get full Strapi URL from path
  * @param {string} path Path of the URL
@@ -5,7 +6,7 @@
  */
 export function getStrapiURL(path = "") {
   return `${
-    process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"
+    process.env.NEXT_PUBLIC_STRAPI_API_URL || "https://website-jtk.herokuapp.com"
   }${path}`;
 }
 
@@ -15,7 +16,7 @@ export function getStrapiURL(path = "") {
  * @param {Object} options Options passed to fetch
  * @returns Parsed API call response
  */
-export async function fetchAPI(path, options = {}) {
+export async function fetchAPI(path, urlParamsObject = {}, options = {}) {
   // Merge default and user options
   const mergedOptions = {
     headers: {
@@ -24,9 +25,12 @@ export async function fetchAPI(path, options = {}) {
     ...options,
   };
 
+  const queryString = qs.stringify(urlParamsObject);
   const requestUrl = `${getStrapiURL(
-    `/api${path}?populate=*`
+    `/api${path}${queryString ? `?${queryString}` : ""}`
   )}`;
+
+  console.log(requestUrl);
 
   // Trigger API call
   const response = await fetch(requestUrl, mergedOptions);
