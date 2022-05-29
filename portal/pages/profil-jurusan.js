@@ -1,11 +1,9 @@
-import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Footer from '../components/footer';
 import Header from '../components/header';
+import SideNav  from '../components/sidenav';
 import { fetchAPI } from "../lib/api";
 import { getStrapiMedia } from '../lib/media';
-import reactMarkdown from 'react-markdown';
 import ReactMarkdown from 'react-markdown';
 
 const ProfilJurusan = ({profil}) => {
@@ -30,7 +28,7 @@ const ProfilJurusan = ({profil}) => {
                     </ReactMarkdown>
                 </div>
                 <div className='col-4'>
-                    {/* Untuk side bar */}
+                    <SideNav />
                 </div>
             </div>
         </div>

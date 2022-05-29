@@ -22,7 +22,7 @@ const Footer = () => {
                                     </tr>
                                     <tr>
                                         <td className=".bot-table akreditasi">A</td>
-                                        <td className=".bot-table tenggat">terakreditasi tahun 2018 berlaku hingga 09-07-2023</td>
+                                        <td className=".bot-table tenggat px-1">terakreditasi tahun 2018 berlaku hingga 09-07-2023</td>
                                     </tr>
                                 </tbody> 
                             </table>
@@ -36,7 +36,7 @@ const Footer = () => {
                                     </tr>
                                     <tr>
                                         <td className=".bot-table akreditasi">A</td>
-                                        <td className=".bot-table tenggat">terakreditasi tahun 2018 berlaku hingga 21-10-2026</td>
+                                        <td className=".bot-table tenggat px-1">terakreditasi tahun 2018 berlaku hingga 21-10-2026</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -47,14 +47,14 @@ const Footer = () => {
                             Kontak
                         </div>
                         <div className="footer-top-body mt-2">
-                            <p className="pe-5">
+                            <p className="pe-5 white-text">
                                 Jurusan Teknik Komputer dan Informatika<br/>
                                 Politeknik Negeri Bandung
                             </p>
-                            <p className="pe-5">
+                            <p className="pe-5 white-text">
                                 Jl. Gegerkalong Hilir, Ds. Ciwaruga Bandung 40559, Kotak Pos 1234 Jawa Barat
                             </p>
-                            <p className="pe-5">
+                            <p className="pe-5 white-text">
                                 Telp. (022) 2013789 ext. 301 
                             </p>
                         </div>
@@ -91,7 +91,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div id="footer-bot">
+            <div className="white-text" id="footer-bot">
                 © 2012—2022 Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung.
             </div>
         </div>

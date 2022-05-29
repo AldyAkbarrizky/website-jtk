@@ -1,9 +1,23 @@
+* {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px;
+    color: #102D59;
+}
+
+.white-text {
+    color: white !important;
+}
+
+.blue-text {
+    color: #102D59 !important;
+}
+
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .main-body {
-    padding: 15px 100px 15px 100px !important;
+    padding: 50px 150px 50px 150px !important;
     background-color: #F3F3F3;
 }
 
@@ -13,7 +27,7 @@ a {
 
 #header {
     background-color: white;
-    padding: 15px 100px 15px 100px;
+    padding: 15px 150px 15px 150px;
     color: #102D59;
 }
 
@@ -40,18 +54,17 @@ a {
 }
 
 #footer {
-    color: white;
+    color: white !important;
 }
 
 #footer-top {
     background-color: #102D59;
-    padding: 15px 100px 15px 100px;
+    padding: 15px 150px 15px 150px;
 }
 
 #footer .table {
     margin-top: 10px;
     font-size: 12px;
-    color: white;
     border: 1px solid;
     text-align: center;
 }
@@ -59,15 +72,16 @@ a {
 #footer .table td {
     border: 1px solid white;
     padding: 15px 0 15px 0;
+    color: white !important;
 }
 
 #footer .table .nama-prodi {
+    border: 1px solid white;
     padding: 5px 0 5px 0;
 }
 
 #footer .table .tenggat {
     width: 75%;
-    padding: 0 15px 0 15px;
 }
 
 #footer .table .akreditasi {
@@ -84,9 +98,24 @@ a {
 
 #footer-bot {
     background-color: #0A244D;
-    padding: 10px 100px 10px 100px;
+    padding: 10px 150px 10px 150px;
 }
 
 .footer-top-header {
     font-weight: 600;
+}
+
+#sidenav{
+    padding: 50px 35px 0 35px;
+}
+
+.sidenav-header {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 0 10px 0;
+}
+
+.sidenav-body-list {
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #D8D8D8;
 }
