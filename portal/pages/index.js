@@ -6,9 +6,12 @@ import Header from '../components/header';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
+      <div id="landing-page-banner">
+
+      </div>
       <Footer />
-    </div>
+    </>
   )
 }

@@ -7,24 +7,24 @@ import { getStrapiMedia } from '../lib/media';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
-const ProfilD3 = ({profilProdiD3}) => {
+const ProfilD4 = ({profilProdiD4}) => {
   return (
     <div>
         <Header />
         <div className='container-fluid main-body'>
             <div className='row'>
                 <div className='col-8'>
-                    <h1>{profilProdiD3.attributes.judul_content}</h1>
+                    <h1>{profilProdiD4.attributes.judul_content}</h1>
                     <Image
                         className='mt-3'
-                        src={getStrapiMedia(profilProdiD3.attributes.banner_konten)}
+                        src={getStrapiMedia(profilProdiD4.attributes.banner_konten)}
                         width={1920}
                         height={1080}
                         layout='intrinsic'
                         alt="Banner profil jurusan"
                     />
                     <ReactMarkdown className='mt-3 lh-lg' remarkPlugins={remarkGfm}>
-                        {profilProdiD3.attributes.body_konten}
+                        {profilProdiD4.attributes.body_konten}
                     </ReactMarkdown>
                 </div>
                 <div className='col-4'>
@@ -38,13 +38,13 @@ const ProfilD3 = ({profilProdiD3}) => {
 }
 
 export async function getServerSideProps() {
-    const profilProdiD3 = await fetchAPI("/profil-prodi-d3", {
+    const profilProdiD4 = await fetchAPI("/profil-prodi-d4", {
         populate: "*"
     });
 
     return {
-        props: {profilProdiD3: profilProdiD3.data}
+        props: {profilProdiD4: profilProdiD4.data}
     }
 }
 
-export default ProfilD3;
+export default ProfilD4;

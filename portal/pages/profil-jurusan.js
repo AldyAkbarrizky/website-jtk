@@ -23,7 +23,7 @@ const ProfilJurusan = ({profil}) => {
                         layout='intrinsic'
                         alt="Banner profil jurusan"
                     />
-                    <ReactMarkdown className='mt-3'>
+                    <ReactMarkdown className='mt-3 lh-lg'>
                         {profil.attributes.body_konten}
                     </ReactMarkdown>
                 </div>
@@ -37,7 +37,7 @@ const ProfilJurusan = ({profil}) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const profilJurusan = await fetchAPI("/profil-jurusan", {
         populate: "*"
     });

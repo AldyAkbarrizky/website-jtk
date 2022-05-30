@@ -18,7 +18,7 @@ const SideNav = () => {
                             <Link href="/profil-d3"><a className="blue-text">Profil Prodi D-3 Teknik Informatika</a></Link>
                         </div>
                         <div className="sidenav-body-list">
-                            <Link href="/"><a className="blue-text">Profil Prodi D-4 Teknik Informatika</a></Link>
+                            <Link href="/profil-d4"><a className="blue-text">Profil Prodi D-4 Teknik Informatika</a></Link>
                         </div>
                     </div>
                 </div>

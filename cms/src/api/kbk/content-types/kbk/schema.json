@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kbks",
+  "info": {
+    "singularName": "kbk",
+    "pluralName": "kbks",
+    "displayName": "KBK"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_kbk": {
+      "type": "string"
+    }
+  }
+}

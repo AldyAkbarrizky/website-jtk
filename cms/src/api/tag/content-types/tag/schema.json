@@ -1,24 +1,23 @@
 {
   "kind": "collectionType",
-  "collectionName": "kategoris",
+  "collectionName": "tags",
   "info": {
-    "singularName": "kategori",
-    "pluralName": "kategoris",
-    "displayName": "Kategori",
-    "description": ""
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "Tag"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "nama_kategori": {
+    "nama_tag": {
       "type": "string"
     },
-    "slug_kategori": {
+    "slug_tag": {
       "type": "string"
     },
-    "deskripsi_kategori": {
+    "deskripsi_tag": {
       "type": "text"
     }
   }
