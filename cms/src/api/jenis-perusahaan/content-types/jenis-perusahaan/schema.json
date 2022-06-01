@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jenis_perusahaans",
+  "info": {
+    "singularName": "jenis-perusahaan",
+    "pluralName": "jenis-perusahaans",
+    "displayName": "Jenis Perusahaan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_jenis": {
+      "type": "string"
+    }
+  }
+}

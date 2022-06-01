@@ -38,9 +38,9 @@ const Header = () => {
                                             <li><Link href="/profil-jurusan"><a className="dropdown-item">Profil Jurusan</a></Link></li>
                                             <li><Link href="/profil-d3"><a className="dropdown-item">Profil Prodi D-3</a></Link></li>
                                             <li><Link href="/profil-d4"><a className="dropdown-item">Profil Prodi D-4</a></Link></li>
-                                            <li><Link href="/"><a className="dropdown-item">Profil Tenaga Kependidikan</a></Link></li>
-                                            <li><Link href="/"><a className="dropdown-item">Profil Dosen</a></Link></li>
-                                            <li><Link href="/"><a className="dropdown-item">Agenda</a></Link></li>
+                                            <li><Link href="/profil-tenaga-kependidikan"><a className="dropdown-item">Profil Tenaga Kependidikan</a></Link></li>
+                                            <li><Link href="/profil-dosen"><a className="dropdown-item">Profil Dosen</a></Link></li>
+                                            <li><Link href="/"><a className="dropdown-item">Kalender Akademik</a></Link></li>
                                         </ul>
                                     </li>
                                     <li className="nav-item dropdown">
@@ -50,8 +50,8 @@ const Header = () => {
                                         <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
                                             <li><Link href="/profil-lulusan-d4"><a className="dropdown-item">Profil Lulusan D-4</a></Link></li>
                                             <li><Link href="/profil-lulusan-d3"><a className="dropdown-item">Profil Lulusan D-3</a></Link></li>
-                                            <li><Link href="/"><a className="dropdown-item">Kurikulum D-4</a></Link></li>
-                                            <li><Link href="/"><a className="dropdown-item">Kurikulum D-3</a></Link></li>
+                                            <li><Link href="/kurikulum-d4"><a className="dropdown-item">Kurikulum D-4</a></Link></li>
+                                            <li><Link href="/kurikulum-d3"><a className="dropdown-item">Kurikulum D-3</a></Link></li>
                                         </ul>
                                     </li>
                                     <li className="nav-item">

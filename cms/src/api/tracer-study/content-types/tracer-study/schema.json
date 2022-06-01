@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tracer_studies",
+  "info": {
+    "singularName": "tracer-study",
+    "pluralName": "tracer-studies",
+    "displayName": "Tracer Study"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_prodi": {
+      "type": "string"
+    },
+    "angkatan": {
+      "type": "string"
+    },
+    "bidang_pekerjaan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bidang-pekerjaan.bidang-pekerjaan"
+    },
+    "range_salary": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::range-salary.range-salary"
+    },
+    "jenis_perusahaan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::jenis-perusahaan.jenis-perusahaan"
+    },
+    "waktu_tracing": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::waktu-tracing.waktu-tracing"
+    }
+  }
+}

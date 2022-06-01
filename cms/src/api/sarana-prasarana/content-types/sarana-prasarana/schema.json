@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sarana_prasaranas",
+  "info": {
+    "singularName": "sarana-prasarana",
+    "pluralName": "sarana-prasaranas",
+    "displayName": "Sarana Prasarana"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gambar_fasilitas": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "nama_fasilitas": {
+      "type": "string"
+    }
+  }
+}

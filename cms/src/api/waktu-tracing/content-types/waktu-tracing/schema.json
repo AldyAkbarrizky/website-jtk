@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "waktu_tracings",
+  "info": {
+    "singularName": "waktu-tracing",
+    "pluralName": "waktu-tracings",
+    "displayName": "Waktu Tracing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kategori_waktu_tracing": {
+      "type": "string"
+    }
+  }
+}

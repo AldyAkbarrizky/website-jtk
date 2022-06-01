@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bidang_pekerjaans",
+  "info": {
+    "singularName": "bidang-pekerjaan",
+    "pluralName": "bidang-pekerjaans",
+    "displayName": "Bidang Pekerjaan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_bidang": {
+      "type": "string"
+    }
+  }
+}

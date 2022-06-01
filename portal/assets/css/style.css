@@ -12,6 +12,10 @@
     color: #102D59 !important;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .gray-bg {
     background-color: #FAFAFA !important;
 }
@@ -229,4 +233,20 @@ a {
 
 #kontak-body {
     width: 300px;
+}
+
+.table-kurikulum {
+    border: 1px solid #0A244D !important;
+}
+
+#col-id {
+    width: 50px;
+}
+
+#col-nama {
+    width: 250px;
+}
+
+#col-sks {
+    width: 100px;
 }
