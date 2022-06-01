@@ -15,8 +15,6 @@ const MyApp = ({ Component, pageProps }) => {
     import("bootstrap/dist/js/bootstrap");
   }, []);
 
-  console.log(global);
-
   return (
     <>
         <Head>

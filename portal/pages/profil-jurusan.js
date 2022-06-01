@@ -7,7 +7,6 @@ import { getStrapiMedia } from '../lib/media';
 import ReactMarkdown from 'react-markdown';
 
 const ProfilJurusan = ({profil}) => {
-  console.log(profil)
   return (
     <div>
         <Header />
@@ -41,8 +40,6 @@ export async function getServerSideProps() {
     const profilJurusan = await fetchAPI("/profil-jurusan", {
         populate: "*"
     });
-
-    console.log(profilJurusan);
 
     return {
         props: {profil: profilJurusan.data}

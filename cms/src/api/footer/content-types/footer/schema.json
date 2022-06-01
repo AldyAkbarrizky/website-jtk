@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "akreditasi_d3": {
+      "type": "string"
+    },
+    "akreditasi_d4": {
+      "type": "string"
+    },
+    "deskripsi_akreditasi_d3": {
+      "type": "string"
+    },
+    "deskripsi_akreditasi_d4": {
+      "type": "string"
+    }
+  }
+}

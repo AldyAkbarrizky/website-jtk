@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kurikulums",
+  "info": {
+    "singularName": "kurikulum",
+    "pluralName": "kurikulums",
+    "displayName": "Kurikulum"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_kurikulum": {
+      "type": "string"
+    }
+  }
+}

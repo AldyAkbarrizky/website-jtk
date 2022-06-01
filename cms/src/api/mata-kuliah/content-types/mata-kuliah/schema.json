@@ -4,7 +4,8 @@
   "info": {
     "singularName": "mata-kuliah",
     "pluralName": "mata-kuliahs",
-    "displayName": "Mata Kuliah"
+    "displayName": "Mata Kuliah",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,12 @@
   "attributes": {
     "nama_matkul": {
       "type": "string"
+    },
+    "kode_matkul": {
+      "type": "string"
+    },
+    "deskripsi_matkul": {
+      "type": "text"
     }
   }
 }

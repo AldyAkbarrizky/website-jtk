@@ -23,11 +23,44 @@
         "audios"
       ]
     },
-    "Nama": {
+    "nama": {
       "type": "string"
     },
-    "Email": {
+    "email": {
       "type": "string"
+    },
+    "jenis_kelamin": {
+      "type": "string"
+    },
+    "jabatan_fungsional": {
+      "type": "string"
+    },
+    "pendidikan_tertinggi": {
+      "type": "string"
+    },
+    "status_ikatan_kerja": {
+      "type": "string"
+    },
+    "status_aktivitas": {
+      "type": "string"
+    },
+    "expertise": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::expertise.expertise"
+    },
+    "kbk": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kbk.kbk"
+    },
+    "riwayat_pendidikan": {
+      "type": "richtext"
+    },
+    "publikasis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::publikasi.publikasi"
     }
   }
 }

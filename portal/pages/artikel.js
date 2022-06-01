@@ -4,19 +4,20 @@ import styles from '../styles/Home.module.css'
 import Footer from '../components/footer';
 import Header from '../components/header';
 import { fetchAPI } from "../lib/api";
+import { fetcher } from '../lib/api_fetcher';
 import { getStrapiMedia } from '../lib/media';
 import ReactMarkdown from 'react-markdown';
+import { useEffect, useState } from 'react';
 
 const Artikel = ({artikel}) => {
-  console.log(artikel)
   return (
     <div>
         <Header />
         <div className='container-fluid main-body' id='artikel-main'>
             <div className='row'>
-                <div className='col-8'>
-                    <h1>Berita Seputar JTK Polban</h1>
-                    {artikel.map((data, i) => {
+                <div className='col-7'>
+                    <h3 className='fw-bold'>Berita Seputar JTK Polban</h3>
+                    {artikel.data.map((data, i) => {
                         return (
                             <div key={data.attributes.id} className="card mt-4 mb-4">
                                 <Image
@@ -27,18 +28,30 @@ const Artikel = ({artikel}) => {
                                     alt="Banner Artikel"
                                 />
                                 <div className="card-body p-5">
-                                    <h2>{data.attributes.judul_konten}</h2>
-                                    <ReactMarkdown>
+                                    <h4 className='fw-bold'>{data.attributes.judul_konten}</h4>
+                                    <ReactMarkdown className='my-4'>
                                         {data.attributes.body_excerpt}
                                     </ReactMarkdown>
-                                    <button type="button" className="btn btn-primary">Baca Selengkapnya</button>
+                                    <button type="button" className="btn btn-blue">Baca Selengkapnya</button>
                                 </div>
 
                             </div>
                         );
                     })}
+                    <div id='pagination-btn'>
+                        <button
+                          className="btn btn-blue me-2 page-btn"
+                          disabled={artikel.meta.pagination.page === 1}>
+                            Previous
+                        </button>
+                        <button
+                          className="btn btn-blue me-2 page-btn"
+                          disabled={artikel.meta.pagination.page === artikel.meta.pagination.pageCount}>
+                            Next
+                        </button>
+                    </div>
                 </div>
-                <div className='col-4'>
+                <div className='col-5'>
                     
                 </div> 
             </div>
@@ -48,16 +61,18 @@ const Artikel = ({artikel}) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const artikel = await fetchAPI("/beritas", {
         populate: "*",
         sort: ['createdAt:desc'],
+        pagination: {
+            page: 1,
+            pageSize: 3
+        }
     });
 
-    console.log(artikel);
-
     return {
-        props: {artikel: artikel.data}
+        props: {artikel: artikel}
     }
 }
 

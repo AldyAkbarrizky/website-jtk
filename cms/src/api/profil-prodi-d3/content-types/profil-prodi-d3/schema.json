@@ -4,7 +4,8 @@
   "info": {
     "singularName": "profil-prodi-d3",
     "pluralName": "profil-prodi-d3s",
-    "displayName": "Profil Prodi D3"
+    "displayName": "Profil Prodi D3",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,16 +16,20 @@
       "type": "string"
     },
     "banner_konten": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "body_konten": {
+      "type": "richtext"
+    },
+    "profil_lulusan": {
       "type": "richtext"
     }
   }

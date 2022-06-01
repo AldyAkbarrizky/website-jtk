@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "kontaks",
+  "info": {
+    "singularName": "kontak",
+    "pluralName": "kontaks",
+    "displayName": "Kontak"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "alamat": {
+      "type": "string"
+    },
+    "no_telp": {
+      "type": "string"
+    }
+  }
+}

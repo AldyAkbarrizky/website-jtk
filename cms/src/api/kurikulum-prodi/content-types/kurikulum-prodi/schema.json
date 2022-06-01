@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kurikulum_prodis",
+  "info": {
+    "singularName": "kurikulum-prodi",
+    "pluralName": "kurikulum-prodis",
+    "displayName": "Kurikulum Prodi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_prodi": {
+      "type": "string"
+    },
+    "kurikulum": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kurikulum.kurikulum"
+    },
+    "mata_kuliahs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mata-kuliah.mata-kuliah"
+    }
+  }
+}
