@@ -250,3 +250,19 @@ a {
 #col-sks {
     width: 100px;
 }
+
+.landing-page-news {
+    height: 250px;
+}
+
+.lp-read-more {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 40px;
+}
+
+.join-partner {
+    width:100%;
+    text-align: center;
+    margin-bottom: 25px;
+}

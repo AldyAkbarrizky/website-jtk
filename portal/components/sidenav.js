@@ -60,7 +60,7 @@ const SideNav = () => {
                     </div>
                     <div className="sidenav-body">
                         <div className="sidenav-body-list">
-                            <Link href="/"><a className="blue-text">Info Kalender Akademik</a></Link>
+                            <Link href="/agenda"><a className="blue-text">Info Kalender Akademik</a></Link>
                         </div>
                     </div>
                 </div>

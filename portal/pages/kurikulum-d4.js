@@ -16,12 +16,12 @@ const KurikulumD4 = ({kurikulum}) => {
                     <h3>Daftar Mata Kuliah {kurikulum[0].attributes.nama_prodi}</h3>
                     <div className='row mb-3'>
                         <div className='col-3'>
-                            <select class="form-select" aria-label="Semester D-3">
+                            <select className="form-select" aria-label="Semester D-3">
                                 <option selected>Semester {kurikulum[0].attributes.semester}</option>
                             </select>
                         </div>
                         <div className='col-3'>
-                            <select class="form-select" aria-label="Semester D-3">
+                            <select className="form-select" aria-label="Semester D-3">
                                 <option selected>{kurikulum[0].attributes.kurikulum.data.attributes.nama_kurikulum}</option>
                             </select>
                         </div>

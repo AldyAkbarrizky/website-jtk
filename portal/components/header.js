@@ -40,7 +40,7 @@ const Header = () => {
                                             <li><Link href="/profil-d4"><a className="dropdown-item">Profil Prodi D-4</a></Link></li>
                                             <li><Link href="/profil-tenaga-kependidikan"><a className="dropdown-item">Profil Tenaga Kependidikan</a></Link></li>
                                             <li><Link href="/profil-dosen"><a className="dropdown-item">Profil Dosen</a></Link></li>
-                                            <li><Link href="/"><a className="dropdown-item">Kalender Akademik</a></Link></li>
+                                            <li><Link href="/agenda"><a className="dropdown-item">Kalender Akademik</a></Link></li>
                                         </ul>
                                     </li>
                                     <li className="nav-item dropdown">
@@ -58,16 +58,16 @@ const Header = () => {
                                         <Link href="/kontak"><a className="nav-link">Kontak</a></Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link href="/"><a className="nav-link">Fasilitas</a></Link>
+                                        <Link href="/sarana-prasarana"><a className="nav-link">Fasilitas</a></Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link href="/artikel"><a className="nav-link">Artikel</a></Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link href="/"><a className="nav-link">Gallery</a></Link>
+                                        <Link href="/galeri"><a className="nav-link">Gallery</a></Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link href="/"><a className="nav-link">Tracer Study</a></Link>
+                                        <Link href="/tracer-study"><a className="nav-link">Tracer Study</a></Link>
                                     </li>
                                 </ul>
                             </div>
