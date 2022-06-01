@@ -41,10 +41,16 @@ const SideNav = () => {
                     </div>
                     <div className="sidenav-body">
                         <div className="sidenav-body-list">
-                            <Link href="/"><a className="blue-text">Daftar Mata Kuliah</a></Link>
+                            <Link href="/"><a className="blue-text">Kurikulum D-3</a></Link>
                         </div>
                         <div className="sidenav-body-list">
-                            <Link href="/"><a className="blue-text">Profil Lulusan</a></Link>
+                            <Link href="/"><a className="blue-text">Kurikulum D-4</a></Link>
+                        </div>
+                        <div className="sidenav-body-list">
+                            <Link href="/profil-lulusan-d3"><a className="blue-text">Profil Lulusan D-3</a></Link>
+                        </div>
+                        <div className="sidenav-body-list">
+                            <Link href="/profil-lulusan-d4"><a className="blue-text">Profil Lulusan D-4</a></Link>
                         </div>
                     </div>
                 </div>
@@ -55,16 +61,6 @@ const SideNav = () => {
                     <div className="sidenav-body">
                         <div className="sidenav-body-list">
                             <Link href="/"><a className="blue-text">Info Kalender Akademik</a></Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="sidenav-section">
-                    <div className="sidenav-header">
-                        Prestasi
-                    </div>
-                    <div className="sidenav-body">
-                        <div className="sidenav-body-list">
-                            <Link href="/"><a className="blue-text">Daftar Prestasi</a></Link>
                         </div>
                     </div>
                 </div>

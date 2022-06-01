@@ -14,7 +14,7 @@ const ProfilD4 = ({profilProdiD4}) => {
         <div className='container-fluid main-body'>
             <div className='row'>
                 <div className='col-8'>
-                    <h1>{profilProdiD4.attributes.judul_content}</h1>
+                    <h3 className='fw-bold'>{profilProdiD4.attributes.judul_konten}</h3>
                     <Image
                         className='mt-3'
                         src={getStrapiMedia(profilProdiD4.attributes.banner_konten)}

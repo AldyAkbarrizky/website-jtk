@@ -6,25 +6,33 @@ import { fetchAPI } from "../lib/api";
 import { getStrapiMedia } from '../lib/media';
 import ReactMarkdown from 'react-markdown';
 
-const ProfilJurusan = ({profil}) => {
+const Kontak = ({kontak}) => {
   return (
     <div>
         <Header />
         <div className='container-fluid main-body'>
             <div className='row'>
                 <div className='col-8'>
-                    <h3 className='fw-bold'>{profil.attributes.judul_konten}</h3>
+                    <h3 className='fw-bold'>Kontak</h3>
                     <Image
                         className='mt-3'
-                        src={getStrapiMedia(profil.attributes.banner_konten)}
+                        src={`https://res.cloudinary.com/web-jtk/image/upload/v1653908065/Banner_Landing_Page_4764e1e7f0.jpg`}
                         width={1920}
                         height={1080}
                         layout='intrinsic'
-                        alt="Banner profil jurusan"
+                        alt="Placeholder untuk map"
                     />
-                    <ReactMarkdown className='mt-3 lh-lg'>
-                        {profil.attributes.body_konten}
-                    </ReactMarkdown>
+                    <div id='kontak-body'>
+                        <div id='kontak-profil' className='my-4'>
+                            Jurusan Teknik Komputer dan Informatika Politeknik Negeri Bandung
+                        </div>
+                        <div id='kontak-alamat' className='mb-4'>
+                            {kontak.attributes.alamat}
+                        </div>
+                        <div id='kontak-telp'>
+                            Telp. {kontak.attributes.no_telp}
+                        </div>
+                    </div>
                 </div>
                 <div className='col-4'>
                     <SideNav />
@@ -37,13 +45,13 @@ const ProfilJurusan = ({profil}) => {
 }
 
 export async function getServerSideProps() {
-    const profilJurusan = await fetchAPI("/profil-jurusan", {
+    const kontak = await fetchAPI("/kontak", {
         populate: "*"
     });
 
     return {
-        props: {profil: profilJurusan.data}
+        props: {kontak: kontak.data}
     }
 }
 
-export default ProfilJurusan
+export default Kontak

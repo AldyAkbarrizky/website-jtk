@@ -20,6 +20,12 @@
     },
     "deskripsi_matkul": {
       "type": "text"
+    },
+    "sks_teori": {
+      "type": "integer"
+    },
+    "sks_praktikum": {
+      "type": "integer"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "kurikulum-prodi",
     "pluralName": "kurikulum-prodis",
-    "displayName": "Kurikulum Prodi"
+    "displayName": "Kurikulum Prodi",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,6 +24,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::mata-kuliah.mata-kuliah"
+    },
+    "semester": {
+      "type": "string"
     }
   }
 }

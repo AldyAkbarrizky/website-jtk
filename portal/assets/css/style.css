@@ -43,6 +43,14 @@
     padding: 0 200px 0 200px !important;
 }
 
+.font-12 {
+    font-size: 12px !important;
+}
+
+.bb-1-gray {
+    border-bottom: 1px solid #D8D8D8 !important;
+}
+
 a {
     text-decoration: none !important;
 }
@@ -217,4 +225,8 @@ a {
 
 .page-btn {
     width: 100px;
+}
+
+#kontak-body {
+    width: 300px;
 }

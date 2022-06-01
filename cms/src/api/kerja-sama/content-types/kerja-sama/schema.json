@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kerja_samas",
+  "info": {
+    "singularName": "kerja-sama",
+    "pluralName": "kerja-samas",
+    "displayName": "Kerja Sama"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_perusahaan": {
+      "type": "string"
+    },
+    "logo_perusahaan": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
